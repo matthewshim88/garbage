@@ -22,5 +22,5 @@ def addPoke(request):
     return redirect(reverse('pokes:index'))
 
 def logOut(request):
-    request.session.sclear()
+    request.session.clear()
     return redirect(reverse('users:index'))
